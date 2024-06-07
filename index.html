@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+
+
+
+    <style>
+        body{margin:0px;} 
+        div#wrapper {margin-top:0px; width:900px; height:500px;background-color: antiquewhite;}
+        header {margin-bottom: 0px; padding-top: 10px;}
+        header img{float: left;}
+        nav ul {padding:10px; border-top:solid red 1px;border-bottom: solid red 1px;  list-style: none; text-align: center; margin-bottom: 0px;}  
+        nav ul li {display: inline; padding:16.5px;}
+        nav ul li a {text-decoration: none; color: black; letter-spacing: 8px;}
+                    a:hover { color: white} 
+       
+        aside {float: left; width: 180px}
+        section{float: left; width: 420px; height:300px ;margin:10px 10px 10px 0px; border-left: solid 3px grey; border-top: solid 3px grey;}
+        article {float:left; border: solid red 1px; width:300px; margin-top: 7px;}
+        div#article {margin-left:7px}
+        
+        div#content{font-size: small;}
+        aside#left ul {padding:0px}
+        aside#left ul li {padding:5px; border-bottom:1px solid black; list-style: none; background-color: #333338}
+        aside#left ul li a{padding:10px; text-decoration:none; color:white;} 
+        aside#left ul li:hover {background-color: red;}
+        aside#right {margin-top: 0px;}
+        footer{clear: both;text-align:center}
+        
+        
+        
+
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <img src="/images_all/gitcat.webp" style="height: 50px; width: 50px;">
+        <a href="http://chatgpt.com"><h2>Web Shop</h2></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="#">CONTACTS</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+    <aside id="left">
+        <ul>
+            <p style="font-weight: bold; margin-bottom: 0px; font-size: large;">카테고리</p>
+            <li><a href="/images_all/gitcat.webp" target="_blank">컴퓨터</a></li>
+            <li><a href="/images_all/지용이형.webp" target="_blank">의류</a></li>
+            <li><a href="/images_all/뉴진스.jpg" target="_blank">음악</a></li>
+            <li><a href="/images_all/동석이형.jpg" target="_blank">영화</a></li>
+            <li><a href="/images_all/바나나보트.jpg" target="_blank">스포츠/레저</a></li>
+            <li><a href="/images_all/이케아.jpg" target="_blank">가구/인테리어</a></li>
+            <li><a href="/images_all/맥도날드커피.jpg" target="_blank">식품</a></li>
+        </ul>
+    </aside>
+    <section>
+        <div id="article">
+        <article style="height: 270px; width:190px">
+            <img src="/images_all/dell-desktop-computer.jpg" style="width:60px; height:60px">
+            <p>심플하고 슬림한 본체에 코어 i5 3470과 지포스 GT630을 장착 CPU: 인텔 코어i5 3470 (아이브릿지 3새대) 사용</p>
+            <br>가격: 1,200,000원
+            <input type="submit" value="쇼핑카트에 추가하기">
+        </article>
+        <article style="height: 250px; width:190px">
+            <img src="/images_all/office-desktop-computer.jpg" style="width:60px; height:60px">
+            <p>Full-HD로 선명한 화면, ISP 패널로 시야각도 좋다! CPU: 인텔 코어 i7 3630QM, CPU: 인텔 코어 i7 3630 QM </p>
+            <br>가격:1,200,000원
+            <input type="submit" value="쇼핑카트에 추가하기">
+        </article>
+        </div>
+    </section>
+    
+    <aside id="right">
+            <p style="font-weight:bold; margin-bottom: 0px;">Shopping Cart</p>
+            현재 쇼핑카트에 물품이 없습니다.<br>
+            <a href="#" style="color:blue">쇼핑카트 보기 </a>
+            <br><br>
+            <form>
+            <p style="font-weight: bold; margin-bottom: 0px;">Log In</p>
+            아이디<br><input type="text" id="id" required><br>
+            패스워드<br><input type="text" id="pw" required><br>
+            <input type="submit" value="로그인">
+            <input type="submit" value="초기화"><br>
+            <a href="/proj1_webshop/form회원가입.html" style="color:blue">회원가입</a> <a href="#" style="color:blue">비밀번호 분실</a>
+            </form>
+    </aside>
+    </div>
+        <footer>
+        <p style="font-size: small; font-weight: bold;"> Copyright (c) 2023 Web Shop</p>
+    </footer>
+      
+</div>
+</body>
+</html>
